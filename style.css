@@ -1,0 +1,178 @@
+/* base layout */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+}
+
+header {
+	text-align: center;
+	background-color: #204465;
+	height: 4.25rem;
+}
+
+header h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 15px;
+	text-transform: uppercase;
+	color: white;
+
+}
+
+legend {
+	font-weight: bolder;
+	color: #0e223c;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.container h1,
+.text-center p {
+	text-align: center;
+}
+
+.text-center h1 {
+	margin-top: 50px
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+.container p {
+	color: darkgrey;
+	font-size: 12px;
+
+}
+
+.t-border {
+	border-bottom: solid 1px #204465;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+.a-border {
+	border-top: 5px solid #204465;
+}
+
+form {
+	width: 99%;
+	max-width: 800px;
+	padding: 0 1em;
+	/*optional*/
+	margin: 0 auto;
+}
+
+
+fieldset {
+	border: none;
+}
+
+input::placeholder {
+	color: grey;
+	text-align: right;
+	font-style: italic;
+
+}
+.inner-group,
+.outer-group {
+	display: flex;
+	flex-direction: column;
+}
+.outer-group textarea,
+input {
+	background-color: #dddada;
+	border-radius: 5px;
+	padding: 15px;
+	border: none;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid #204465;
+}
+label {
+	color: grey;
+	font-size: 14px;
+	margin: 6px;
+}
+.outer-group label[for="message"] {
+	font-size: 12px;
+	color: darkgray;
+	margin: 25px 0 25px;
+
+}
+.inner-group select {
+	padding: 15px;
+	background: #dddada;
+	color: grey;
+	border-radius: 5px;
+	border: none;
+}
+.inner-group option {
+	color: grey;
+}
+.zip-code input {
+	width: 50%;
+}
+textarea {
+	margin-bottom: 20px;
+}
+
+button[type="submit"] {
+	padding: 20px;
+	background-color: #4bb6a3;
+	color: white;
+	font-size: 18px;
+	border-radius: 5px;
+	border: none;
+}
+.inner-group:last-child {
+	margin-bottom: 30px;
+}
+footer {
+	font-style: italic;
+	font-size: 12px;
+	color: darkgray;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 100px;
+}
+
+/* media q --------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+	.container {
+		width: 80%;
+		margin: auto;
+	}
+	.inner-group {
+		display: flex;
+		flex-direction: row;
+	}
+	.inner-group label {
+		flex-basis: 9rem;
+		padding: 10px;
+		margin-left: -9px;
+	}
+	.inner-group input,
+	select {
+		border-radius: 5px;
+		width: 80%;
+	}
+	.second-fieldset input[type="checkbox"] {
+		padding: 10px;
+	}
+	.zip-code input {
+		width: 25%;
+	}
+	.inner-group,
+	.outer-group {
+		padding: 10px 0 10px;
+	}
+
+}

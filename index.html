@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Form</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="author" href="humans.txt">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		<h1>the Code review</h1>
+	</header>
+	<main class="container">
+		<div class="text-center">
+			<h1>Signup for our newsletter</h1>
+			<p>Get the latest news on how your code is doing right in your inbox</p>
+		</div>
+
+
+		<!--form-->
+		<form action="index.html" method="post">
+			<div class="contact a-border">
+				<div class="t-border"></div>
+				<fieldset class="first-field t-border">
+					<legend>Contact Information</legend>
+					<!-- contact informations-->
+					<div class="inner-group">
+						<label for="name">Full Name</label>
+						<input type="text" name="user_name" id="name" placeholder="Required"><br>
+					</div>
+
+					<div class="inner-group">
+						<label for="email">Email Address</label>
+						<input type="email" name="user_email" id="email" placeholder="Required"><br>
+					</div>
+
+					<div class="inner-group">
+						<label for="number">Phone Number</label>
+						<input type="tel" name="user_number" id="number"><br>
+					</div>
+
+					<div class="inner-group">
+						<label for="street">Street Address</label>
+						<input type="text" name="user_street" id="street"><br>
+					</div>
+
+					<div class="inner-group">
+						<label for="city">City</label>
+						<input type="text" name="user_city" id="city"><br>
+					</div>
+
+					<div class="inner-group">
+						<label for="state">State</label>
+						<select name="state" id="state">
+							<option value="">Choose State</option>
+							<option value="">New Jersey</option>
+							<option value="">New York</option>
+							<option value="">Nevada</option>
+							<option value="">Vermont</option>
+						</select><br>
+					</div>
+
+					<div class="inner-group zip-code">
+						<label for="zip">Zip code</label>
+						<input type="text" name="zip" id="zip"><br>
+					</div>
+				</fieldset>
+			</div>
+
+			<!-- newsletter group-->
+
+
+			<div class="newsletter">
+				<fieldset class="second-fieldset">
+					<legend>Newsletter</legend>
+					<p>Select the newsletters you would like to recieve</p>
+					<input type="checkbox" name="html" id="html">
+					<label for="html">HTML News</label><br>
+
+					<input type="checkbox" name="css" id="css">
+					<label for="css">CSS News</label><br>
+
+					<input type="checkbox" name="js" id="js">
+					<label for="js">Javascript News</label>
+
+					<p>Newsletter format</p>
+
+					<input type="radio" name="html-radio" id="html-radio" value="html-radio">
+					<label for="html-radio">HTML</label><br>
+
+					<input type="radio" name="html-radio" id="plain" value="plain">
+					<label for="plain">Plain text</label>
+
+					<div class="outer-group">
+						<label for="message">Other topics you'd like to hear about</label>
+						<textarea name="message" id="message" rows="4"></textarea>
+					</div>
+
+				</fieldset>
+			</div>
+			<div class="outer-group">
+				<button type="submit">Sign Up</button>
+			</div>
+		</form>
+	</main>
+	<footer>Copyright The Code Review</footer>
+</body>
+
+</html>
